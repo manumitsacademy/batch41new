@@ -1,0 +1,12 @@
+<h1>Course Details Here</h1><button (click)="pqr()" *ngIf="!d">Edit</button>
+		<button (click)="pqr()" *ngIf="d">Save</button>
+<div *ngIf="sc">	
+	<h1>Course Name:<span *ngIf="!d">{{sc.name}}</span>
+		<input type="text" [(ngModel)]="sc.name" *ngIf="d">		
+	</h1>
+
+<h1 >Course Id:<span *ngIf="!d">{{sc.id}}</span>
+<input type="text" [(ngModel)]="sc.id" *ngIf="d">	
+</h1>
+</div>
+<input type="text" [(ngModel)]="title">

@@ -1,0 +1,11 @@
+<h1>Hello {{name}}</h1>
+<input type="text" [(ngModel)]="a">
+<button (click)="addCourse()">Add a new Course</button>
+<li *ngFor="let course of courses;let i=index">
+	{{course}}
+	<button (click)="viewCourse(i)">view More</button>
+	<button (click)="deleteCourse(i)">delete</button>
+</li>
+<div *ngIf="selectedCourseIndex+1">
+	<h1>Course Name:{{courses[selectedCourseIndex]}}</h1>
+</div>
